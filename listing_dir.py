@@ -1,7 +1,7 @@
 import os,sys
 import codecs
 
-path = 'C:\\Users\\KULSUM\\Desktop\\DigiJadoo_18-10-27-0826'
+path = 'C:\\Users\\KULSUM\\Desktop\\18-10-27-0826'
 mylist = os.listdir(path)
 
 for file in mylist:
