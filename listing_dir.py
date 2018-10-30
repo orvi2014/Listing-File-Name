@@ -1,7 +1,8 @@
 import os,sys
 import codecs
 
-path = 'C:\\Users\\KULSUM\\Desktop\\18-10-27-0826'
+# get the directory dynamically
+path =  os.path.join(os.getcwd())
 mylist = os.listdir(path)
 
 for file in mylist:
@@ -10,7 +11,8 @@ for file in mylist:
   data_modified = data.replace("_", " ")
 
   file = codecs.open("testfile.txt","+a","utf-8")
-  file.write(data_modified)
+  # writing new line
+  file.write(data_modified+"\n")
   file.close()
 
 
